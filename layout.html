@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Replacating the given design layout using flexbox and grid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6-CSS FLEXBOX AND GRID</title>
+    <style>
+        .topbar, .header, .flex-item, .about, .quick-link, .footer{
+            border: 1px solid black;
+            background-color: aquamarine;
+            margin: 5px;
+            
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+       .nav {
+        display: flex;
+        justify-content: space-between;
+        
+        
+
+       }
+       .flex-item{
+        flex-basis: 20%;
+        /* background-color: aqua; */
+        align-content: center;
+        justify-content: center;
+        
+       }
+       .main{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        
+       }
+       .about {
+        display: grid;
+        grid-row: 1/4; 
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <p>Company logo and slogan</p>
+        </div>
+        <div class="header">
+            <p>Header</p>
+        </div>
+        <div class="nav" >
+            <div class="flex-item">
+                <p>navigation...</p>
+            </div>
+            <div class="flex-item">
+                <p>navigation...</p>
+            </div>
+            <div class="flex-item">
+                <p></p>
+            </div>
+            <div class="flex-item">
+                <p></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main"> 
+            <div class="about">
+                <p>About</p>
+            </div>
+            <div class="quick-link">
+                <p>Quick links</p>
+            </div>
+            <div class="quick-link">
+                <p>Quick links</p>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+<div class="footer">
+    <p>Site plan and Copyright info</p>
+</div>
+</footer>
+</html>
