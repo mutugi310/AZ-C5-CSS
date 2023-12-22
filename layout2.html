@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 - CSS FLEXBOX AND GRID</title>
+    <style>
+       
+        .backgroud{
+            border: 1px solid black;
+            background-color: aquamarine;
+            margin: 10px;
+            
+        }
+        
+        div{
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .nav{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;      
+            
+        }
+        .nav-item{
+            flex-basis: 20%;
+            height: 10px;
+            
+        }
+        p{
+            padding: 0px;
+            margin: 0px;
+            place-self: center;
+            
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: auto;    
+            grid-template-rows: 10em 10em;
+            
+        }
+        .about{
+            grid-row: span 2;
+            
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="topbar backgroud">
+                <p>Company logo and slogan</p>
+            </div>
+            <div class="header backgroud">
+                <p>header</p>
+            </div>
+            <div class="nav">
+                <div class="nav1 backgroud nav-item"><p>navigation</p></div>
+                <div class="nav2 backgroud nav-item"></div>
+                <div class="nav2 backgroud nav-item"></div>
+                <div class="nav2 backgroud nav-item"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="about backgroud"><p>about</p></div>
+        <div class="quick-link backgroud"><p>quick-link</p></div>
+        <div class="quick-link backgroud"><p>quick-link</p></div>
+    </main>
+    <footer>
+        <div class="Copyright backgroud">
+            <p>site plan and copyright info</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
